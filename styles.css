@@ -1,3 +1,46 @@
-h1 {
-  color: red;
-}/*# sourceMappingURL=styles.css.map */
+.btn-main, .btn-main-s {
+  background-color: #0075FF;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px #0075FF;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #0075FF;
+}
+.btn-main-s {
+  padding: 0.1rem 1rem;
+  font-size: 0.75rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #888;
+}
+.btn-sec-s {
+  padding: 0.1rem 1rem;
+  font-size: 0.75rem;
+}
+
+.main-menu li {
+  list-style: none;
+  font-size: 0.5rem;
+  display: inline;
+}
+
+.icon-sm i {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.25rem;
+  border-radius: 50%;
+  color: #0075FF;
+  box-shadow: 0 0 10px rgba(11, 4, 4, 0.3333333333);
+}
+
+/*# sourceMappingURL=styles.css.map */
