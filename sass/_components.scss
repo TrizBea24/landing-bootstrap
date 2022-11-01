@@ -1,4 +1,4 @@
-$color-main: #0075FF;
+@import "colors.scss";
 
 @mixin btn-sm-modify {
     padding: 0.1rem 1rem;
@@ -43,7 +43,7 @@ $color-main: #0075FF;
     }
 }
 
-.main-menu {
+.nav__menu-main {
     margin-bottom: 0;
     li {
         list-style: none;

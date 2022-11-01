@@ -29,19 +29,19 @@
   font-size: 0.75rem;
 }
 
-.main-menu {
+.nav__menu-main {
   margin-bottom: 0;
 }
-.main-menu li {
+.nav__menu-main li {
   list-style: none;
   font-size: 0.75rem;
   display: inline;
 }
-.main-menu li a {
+.nav__menu-main li a {
   color: #000;
   text-decoration: none;
 }
-.main-menu li a:hover {
+.nav__menu-main li a:hover {
   text-decoration: underline;
 }
 
@@ -108,9 +108,27 @@ body {
   height: 4rem;
   border-bottom: solid 1px #ddd;
 }
-
-.logo img {
+.nav__logo img {
   max-width: 7rem;
+}
+
+.home {
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
+  padding: 5rem;
+  align-items: center;
+}
+.home__cta {
+  flex: 1;
+}
+.home__cta-text {
+  color: #0075FF;
+}
+.home__title {
+  width: 20rem;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
