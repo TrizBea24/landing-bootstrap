@@ -44,10 +44,20 @@ $color-main: #0075FF;
 }
 
 .main-menu {
+    margin-bottom: 0;
     li {
         list-style: none;
-        font-size: 0.5rem;
+        font-size: 0.75rem;
         display: inline;
+
+        a {
+            color: #000;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -58,5 +68,49 @@ $color-main: #0075FF;
         border-radius: 50%;
         color: $color-main;
         box-shadow: 0 0 10px #0b040455;
+    }
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    .icon {
+        color: $color-main;
+        font-size: 10rem;
+        text-align: center;
+    }
+    .description {
+        .title {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .text {
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    .cta {
+        margin-top: 3rem;
+        color: $color-main;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.icon-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon {
+        color: $color-main;
+        font-size: 10rem;
+        padding: 0;
+    }
+    .title {
+        margin-top: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
