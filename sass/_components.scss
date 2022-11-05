@@ -49,7 +49,7 @@
         list-style: none;
         font-size: 0.75rem;
         display: inline;
-
+        margin-right: 1.3rem;
         a {
             color: #000;
             text-decoration: none;
@@ -63,20 +63,20 @@
 
 .icon-sm {
     i {
-        font-size: 0.75rem;
-        padding: 0.1rem 0.25rem;
+        font-size: 1.25rem;
+        padding: 0.4rem 0.65rem;
         border-radius: 50%;
         color: $color-main;
         box-shadow: 0 0 10px #0b040455;
     }
 }
 
-.feature {
+.benefit {
     display: flex;
     flex-direction: column;
-    .icon {
+    i {
         color: $color-main;
-        font-size: 10rem;
+        font-size: 7.5rem;
         text-align: center;
     }
     .description {
@@ -103,7 +103,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .icon {
+    i {
         color: $color-main;
         font-size: 10rem;
         padding: 0;

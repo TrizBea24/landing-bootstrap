@@ -36,6 +36,7 @@
   list-style: none;
   font-size: 0.75rem;
   display: inline;
+  margin-right: 1.3rem;
 }
 .nav__menu-main li a {
   color: #000;
@@ -46,32 +47,32 @@
 }
 
 .icon-sm i {
-  font-size: 0.75rem;
-  padding: 0.1rem 0.25rem;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
   border-radius: 50%;
   color: #0075FF;
   box-shadow: 0 0 10px rgba(11, 4, 4, 0.3333333333);
 }
 
-.feature {
+.benefit {
   display: flex;
   flex-direction: column;
 }
-.feature .icon {
+.benefit i {
   color: #0075FF;
-  font-size: 10rem;
+  font-size: 7.5rem;
   text-align: center;
 }
-.feature .description .title {
+.benefit .description .title {
   font-size: 2rem;
   text-align: center;
 }
-.feature .description .text {
+.benefit .description .text {
   color: #888;
   font-weight: 600;
   text-align: center;
 }
-.feature .cta {
+.benefit .cta {
   margin-top: 3rem;
   color: #0075FF;
   font-weight: 600;
@@ -84,7 +85,7 @@
   align-items: center;
   justify-content: center;
 }
-.icon-desc .icon {
+.icon-desc i {
   color: #0075FF;
   font-size: 10rem;
   padding: 0;
@@ -114,11 +115,11 @@ body {
 
 .home {
   display: flex;
-  width: 100%;
-  max-width: 768px;
-  margin: auto;
-  padding: 5rem;
   align-items: center;
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
 }
 .home__cta {
   flex: 1;
@@ -129,6 +130,113 @@ body {
 .home__title {
   width: 20rem;
   font-size: 3rem;
+}
+
+.features {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .intro {
+  text-align: center;
+}
+.features .intro h3 {
+  font-size: 1.8rem;
+}
+.features .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.features .features-body, .features .onboarding .intro, .onboarding .features .intro, .features .benefits .intro, .benefits .features .intro {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.features .features-body margin .text, .features .onboarding .intro margin .text, .onboarding .features .intro margin .text, .features .benefits .intro margin .text, .benefits .features .intro margin .text {
+  padding: 2rem 0;
+  flex: 1;
+}
+.features .features-body margin .text .feature, .features .onboarding .intro margin .text .feature, .onboarding .features .intro margin .text .feature, .features .benefits .intro margin .text .feature, .benefits .features .intro margin .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.features .features-body margin .text .feature .description, .features .onboarding .intro margin .text .feature .description, .onboarding .features .intro margin .text .feature .description, .features .benefits .intro margin .text .feature .description, .benefits .features .intro margin .text .feature .description {
+  margin-left: 1rem;
+  max-width: 20rem;
+}
+.features .features-body margin .text .feature .description__title, .features .onboarding .intro margin .text .feature .description__title, .onboarding .features .intro margin .text .feature .description__title, .features .benefits .intro margin .text .feature .description__title, .benefits .features .intro margin .text .feature .description__title {
+  font-size: 1.25rem;
+}
+.features .features-body margin .text .feature .description__text, .features .onboarding .intro margin .text .feature .description__text, .onboarding .features .intro margin .text .feature .description__text, .features .benefits .intro margin .text .feature .description__text, .benefits .features .intro margin .text .feature .description__text {
+  font-size: 1rem;
+}
+.features .features-body .image img, .features .onboarding .intro .image img, .onboarding .features .intro .image img, .features .benefits .intro .image img, .benefits .features .intro .image img {
+  max-width: 20rem;
+}
+
+.benefits {
+  border-top: 1px solid #ccc;
+}
+.benefits__cards {
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.kpis {
+  background-color: #0075FF;
+  color: white;
+  padding: 4rem;
+  width: 100%;
+}
+.kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kpis .kpi .number {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.kpis .kpi .desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.onboarding .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7rem 5rem 7rem;
+}
+.onboarding .steps .step-separator {
+  flex: 1;
+  border-top: 3px solid #ddd;
+  margin: 0 1rem;
+}
+
+.footer-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F4F8FE;
+}
+.footer-cta .cta {
+  padding: 5rem 0 5rem 5rem;
+}
+.footer-cta .cta__title {
+  font-size: 2rem;
+}
+.footer-cta .cta__description {
+  font-size: 1.5rem;
+}
+.footer-cta .image {
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
