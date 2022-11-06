@@ -4,7 +4,24 @@
     width: 100%;
     max-width: 992px;
     margin: auto;
-    padding: 3rem;
+    padding: 1.5rem;
+}
+
+@mixin intro {
+    text-align: center;
+    margin: 4rem 1.5rem 3rem 1.5rem;
+    font-weight: 500;
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+        color: #888;
+    }
+}
+
+html {
+    min-width: 100vw;
 }
 
 body {
@@ -28,13 +45,18 @@ body {
 .home {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     @include section-display();
 
     &__cta {
-        flex: 1;
-
         &-text {
             color: $color-main;
+        }
+
+        .form-control {
+            padding: 1.25rem 6.5rem 1.25rem 1.25rem;
+            font-size: 1rem;
+            font-weight: 500;
         }
     }
 
@@ -50,21 +72,13 @@ body {
     flex-direction: column;
     align-items: center;
     .intro {
-        text-align: center;
-        h3 {
-            font-size: 1.8rem;
-        }
-        p {
-            font-size: 0.8rem;
-            color: #888;
-        }
+        @include intro();
     }
 
     .features-body {
         display: flex;
         gap: 1rem;
         align-items: center;
-        margin
 
         .text {
             padding: 2rem 0;
@@ -72,7 +86,7 @@ body {
             .feature {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                align-items: flex-start;
                 .description {
                     margin-left: 1rem;
                     max-width: 20rem;
@@ -96,7 +110,8 @@ body {
 .benefits {
     border-top: 1px solid #ccc;
     .intro {
-    @extend .features-body, .intro
+    @include intro();
+    @extend .features-body;
     }
 
     &__cards {
@@ -128,13 +143,15 @@ body {
 
 .onboarding {
     .intro {
-        @extend .features-body, .intro
+        @include intro();
+        @extend .features-body;
         }
     .steps {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 7rem 5rem 7rem;
+        padding: 0 7rem 6rem 7rem;
+        margin: 0 1.5rem 0 1.5rem;
         .step-separator {
             flex: 1;
             border-top: 3px solid #ddd;
@@ -162,4 +179,26 @@ body {
         width: auto;
         justify-content: flex-end;
     }
+}
+
+@media (max-width: 768px) {
+    .onboarding {
+        .steps {
+            flex-direction: column;
+            .icon-desc {
+                title {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .footer-cta {
+        display: block;
+        .cta {
+            padding: 3.5rem;
+            text-align: center;
+        }
+    }
+    
 }

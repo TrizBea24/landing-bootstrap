@@ -1,24 +1,24 @@
 @import "colors.scss";
 
 @mixin btn-sm-modify {
-    padding: 0.1rem 1rem;
-    font-size: 0.75rem;
+    padding: 0.25rem 1rem;
 }
 
 @mixin btn-base {
-    padding: 0.25rem 1.5rem;
+    padding: 1.25rem 2.5rem;
     border-radius: 0.25rem;
 }
 
 .btn-main {
     background-color: $color-main;
+    font-size: 1rem;
+    font-weight: 500;
     color: white;
     @include btn-base;
     border: solid 1px $color-main;
     
     &:hover {
-        background-color: white;
-        color: $color-main;
+        background-color: darken($color-main, 5%);
     }
 
     &-s {
@@ -32,9 +32,11 @@
     color: black;
     background-color: transparent;
     border: none;
+    font-size: 1rem;
+    font-weight: 500;
 
     &:hover {
-        color: #888;
+        color: $color-main;
     }
 
     &-s {
@@ -47,7 +49,8 @@
     margin-bottom: 0;
     li {
         list-style: none;
-        font-size: 0.75rem;
+        font-size: 1rem;
+        font-weight: 500;
         display: inline;
         margin-right: 1.3rem;
         a {
@@ -64,10 +67,15 @@
 .icon-sm {
     i {
         font-size: 1.25rem;
-        padding: 0.4rem 0.65rem;
+        // padding: 0.4rem 0.65rem;
         border-radius: 50%;
         color: $color-main;
-        box-shadow: 0 0 10px #0b040455;
+        // box-shadow: 0 0 10px #0b040455;
+        svg {
+            width: 120%;
+            height: auto;
+            padding: 0.6rem 1rem;
+        }
     }
 }
 
@@ -78,15 +86,20 @@
         color: $color-main;
         font-size: 7.5rem;
         text-align: center;
+        svg {
+            width: 20%; 
+            height: auto;
+            margin-bottom: 2rem;
+        }
     }
     .description {
         .title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             text-align: center;
         }
         .text {
             color: #888;
-            font-weight: 600;
+            font-weight: 400;
             text-align: center;
         }
     }
@@ -104,12 +117,14 @@
     align-items: center;
     justify-content: center;
     i {
-        color: $color-main;
-        font-size: 10rem;
-        padding: 0;
+        svg {
+            width: 600%; 
+            height: auto;
+            color: $color-main;
+        }
     }
     .title {
-        margin-top: 0;
+        margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 600;
     }

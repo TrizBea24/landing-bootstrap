@@ -50,36 +50,28 @@
 
 .icon-sm i {
   font-size: 1.25rem;
+  padding: 0.4rem 0.65rem;
   border-radius: 50%;
   color: #0075FF;
-}
-.icon-sm i svg {
-  width: 120%;
-  height: auto;
-  padding: 0.6rem 1rem;
+  box-shadow: 0 0 10px rgba(11, 4, 4, 0.3333333333);
 }
 
 .benefit {
   display: flex;
   flex-direction: column;
 }
-.benefit i {
+.benefit svg {
   color: #0075FF;
   font-size: 7.5rem;
   text-align: center;
 }
-.benefit i svg {
-  width: 20%;
-  height: auto;
-  margin-bottom: 2rem;
-}
 .benefit .description .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 .benefit .description .text {
   color: #888;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
 }
 .benefit .cta {
@@ -95,19 +87,15 @@
   align-items: center;
   justify-content: center;
 }
-.icon-desc i svg {
-  width: 600%;
-  height: auto;
+.icon-desc i {
   color: #0075FF;
+  font-size: 10rem;
+  padding: 0;
 }
 .icon-desc .title {
-  margin-top: 1rem;
+  margin-top: 0;
   font-size: 1.5rem;
   font-weight: 600;
-}
-
-html {
-  min-width: 100vw;
 }
 
 body {
@@ -130,17 +118,19 @@ body {
 .home {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 100%;
   max-width: 992px;
   margin: auto;
-  padding: 1.5rem;
+  padding: 3rem;
+}
+.home__cta {
+  flex: 1;
 }
 .home__cta-text {
   color: #0075FF;
 }
 .home__cta .form-control {
-  padding: 1.25rem 6.5rem 1.25rem 1.25rem;
+  padding: 1.25rem 2.5rem;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -153,21 +143,20 @@ body {
   width: 100%;
   max-width: 992px;
   margin: auto;
-  padding: 1.5rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .features .intro {
   text-align: center;
-  margin: 4rem 1.5rem 3rem 1.5rem;
-  font-weight: 500;
+  margin-bottom: 1rem;
 }
 .features .intro h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .features .intro p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #888;
 }
 .features .features-body, .features .onboarding .intro, .onboarding .features .intro, .features .benefits .intro, .benefits .features .intro {
@@ -175,23 +164,23 @@ body {
   gap: 1rem;
   align-items: center;
 }
-.features .features-body .text, .features .onboarding .intro .text, .onboarding .features .intro .text, .features .benefits .intro .text, .benefits .features .intro .text {
+.features .features-body margin .text, .features .onboarding .intro margin .text, .onboarding .features .intro margin .text, .features .benefits .intro margin .text, .benefits .features .intro margin .text {
   padding: 2rem 0;
   flex: 1;
 }
-.features .features-body .text .feature, .features .onboarding .intro .text .feature, .onboarding .features .intro .text .feature, .features .benefits .intro .text .feature, .benefits .features .intro .text .feature {
+.features .features-body margin .text .feature, .features .onboarding .intro margin .text .feature, .onboarding .features .intro margin .text .feature, .features .benefits .intro margin .text .feature, .benefits .features .intro margin .text .feature {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
-.features .features-body .text .feature .description, .features .onboarding .intro .text .feature .description, .onboarding .features .intro .text .feature .description, .features .benefits .intro .text .feature .description, .benefits .features .intro .text .feature .description {
+.features .features-body margin .text .feature .description, .features .onboarding .intro margin .text .feature .description, .onboarding .features .intro margin .text .feature .description, .features .benefits .intro margin .text .feature .description, .benefits .features .intro margin .text .feature .description {
   margin-left: 1rem;
   max-width: 20rem;
 }
-.features .features-body .text .feature .description__title, .features .onboarding .intro .text .feature .description__title, .onboarding .features .intro .text .feature .description__title, .features .benefits .intro .text .feature .description__title, .benefits .features .intro .text .feature .description__title {
+.features .features-body margin .text .feature .description__title, .features .onboarding .intro margin .text .feature .description__title, .onboarding .features .intro margin .text .feature .description__title, .features .benefits .intro margin .text .feature .description__title, .benefits .features .intro margin .text .feature .description__title {
   font-size: 1.25rem;
 }
-.features .features-body .text .feature .description__text, .features .onboarding .intro .text .feature .description__text, .onboarding .features .intro .text .feature .description__text, .features .benefits .intro .text .feature .description__text, .benefits .features .intro .text .feature .description__text {
+.features .features-body margin .text .feature .description__text, .features .onboarding .intro margin .text .feature .description__text, .onboarding .features .intro margin .text .feature .description__text, .features .benefits .intro margin .text .feature .description__text, .benefits .features .intro margin .text .feature .description__text {
   font-size: 1rem;
 }
 .features .features-body .image img, .features .onboarding .intro .image img, .onboarding .features .intro .image img, .features .benefits .intro .image img, .benefits .features .intro .image img {
@@ -200,18 +189,6 @@ body {
 
 .benefits {
   border-top: 1px solid #ccc;
-}
-.benefits .intro {
-  text-align: center;
-  margin: 4rem 1.5rem 3rem 1.5rem;
-  font-weight: 500;
-}
-.benefits .intro h3 {
-  font-size: 2rem;
-}
-.benefits .intro p {
-  font-size: 1rem;
-  color: #888;
 }
 .benefits__cards {
   width: 100%;
@@ -238,24 +215,11 @@ body {
   color: rgba(255, 255, 255, 0.6666666667);
 }
 
-.onboarding .intro {
-  text-align: center;
-  margin: 4rem 1.5rem 3rem 1.5rem;
-  font-weight: 500;
-}
-.onboarding .intro h3 {
-  font-size: 2rem;
-}
-.onboarding .intro p {
-  font-size: 1rem;
-  color: #888;
-}
 .onboarding .steps {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 7rem 6rem 7rem;
-  margin: 0 1.5rem 0 1.5rem;
+  padding: 0 7rem 5rem 7rem;
 }
 .onboarding .steps .step-separator {
   flex: 1;
@@ -283,20 +247,4 @@ body {
   justify-content: flex-end;
 }
 
-@media (max-width: 768px) {
-  .onboarding .steps {
-    flex-direction: column;
-  }
-  .onboarding .steps .icon-desc title {
-    text-align: center;
-  }
-  .footer-cta {
-    display: block;
-  }
-  .footer-cta .cta {
-    padding: 3.5rem;
-    text-align: center;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */
